@@ -178,16 +178,6 @@ let skyboxGeo = new THREE.BoxGeometry(2000, 2000, 2000);
 let skybox = new THREE.Mesh(skyboxGeo, createMaterialArray());
 scene.add(skybox);
 
-// const pfp = txLoader.load('./res/icons/pfp.jpg');
-// const pythonLogo = txLoader.load('./res/icons/python.png');
-// const threejsLogo = txLoader.load('./res/icons/threejs.png');
-// const jsLogo = txLoader.load('./res/icons/jslogo.png');
-// const unityLogo = txLoader.load('./res/icons/unitylogo.jpeg');
-// const godotLogo = txLoader.load('./res/icons/godotlogo.png');
-
-// const cubeTextList = [pythonLogo, threejsLogo, jsLogo, unityLogo, godotLogo];
-
-
 const ambientLight = new THREE.AmbientLight(0xffffff);
 // scene.add(ambientLight);
 
@@ -208,13 +198,14 @@ const mercury = new Planet(sunModel, 'mercuryTexture.jpeg', 0.4, 88, 3032, false
 const venus = new Planet(sunModel, 'venusTexture.jpeg', 0.72, 224, 7520, false);
 const earth = new Planet(sunModel, 'earthTexture.jpeg', 1, 365, 7917, false);
 
-earth.createChildCube('./res/icons/pfp.jpg');
 earth.createChildCube('./res/icons/threejs.png');
+earth.createChildCube('./res/icons/pfp.jpg');
+
 
 const mars = new Planet(sunModel, 'marsTexture.jpeg', 1.5, 687, 4212, false);
 
-mars.createChildCube('./res/icons/python.png');
-mars.createChildCube('./res/icons/jslogo.png');
+mars.createChildCube('./res/icons/appleLogo.png');
+mars.createChildCube('./res/icons/androidLogo.png');
 
 const jupiter = new Planet(sunModel, 'jupiterTexture.jpeg', 5.06, 4333, 86881, false);
 const saturn = new Planet(sunModel, 'saturnTexture.jpeg', 9.5, 10756, 74897, true);

@@ -33,8 +33,26 @@ html {
     background-color: black;
 }
 
+h1, h2 {
+    font-family: 'Verdana';
+    font-weight: bolder;
+    color: white;
+}
+
+p {
+    font-family: 'Verdana';
+    font-weight: 200;
+    color: white;
+}
+
+a {
+    font-family: 'Verdana';
+    font-weight: 200;
+    color: darkorchid;
+}
+
 .hoverable {
-    background-color: lightblue;
+    background-color: darkcyan;
     color: black;
     border-radius: 15px;
     grid-column: 2 / 7;
@@ -55,7 +73,7 @@ html {
 }
 
 .name {
-    background-color: yellow;
+    background-color: darkorchid;
     text-align: center;
     height: 6vh;
     grid-column: 3 / 6;
@@ -93,7 +111,7 @@ html {
     visibility: hidden;
 }
 
-iframe {
+iframe, video {
     border-radius: 15px;
     grid-column: 2 / 7;
     z-index: 1;
@@ -101,11 +119,11 @@ iframe {
 
 .topvideo {
     margin-top: 40vh;
-    margin-bottom: -40vh;
+    margin-bottom: -47vh;
 }
 
 .botvideo {
-    margin-top: -40vh;
+    margin-top: -47vh;
 }
 
 .link {
